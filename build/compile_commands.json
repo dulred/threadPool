@@ -1,0 +1,14 @@
+[
+{
+  "directory": "D:/dev/source/c++/vscode/threadPool/build",
+  "command": "D:/dev/software/QT/Tools/mingw1120_64/bin/c++.exe  @CMakeFiles/main.dir/includes_CXX.rsp -g -o CMakeFiles/main.dir/main.cpp.obj -c D:/dev/source/c++/vscode/threadPool/main.cpp",
+  "file": "D:/dev/source/c++/vscode/threadPool/main.cpp",
+  "output": "CMakeFiles/main.dir/main.cpp.obj"
+},
+{
+  "directory": "D:/dev/source/c++/vscode/threadPool/build",
+  "command": "D:/dev/software/QT/Tools/mingw1120_64/bin/c++.exe  @CMakeFiles/main.dir/includes_CXX.rsp -g -o CMakeFiles/main.dir/threadPool/threadpool.cpp.obj -c D:/dev/source/c++/vscode/threadPool/threadPool/threadpool.cpp",
+  "file": "D:/dev/source/c++/vscode/threadPool/threadPool/threadpool.cpp",
+  "output": "CMakeFiles/main.dir/threadPool/threadpool.cpp.obj"
+}
+]

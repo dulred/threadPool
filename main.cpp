@@ -44,8 +44,6 @@ int main(int argc, char const *argv[])
         Result res3 = pool.submitTask(std::make_shared<MyTask>(200000001, 300000000));
         uLong sum1 = res1.get().cast_<uLong>();
         std::cout << sum1 << std::endl;
-
-
     }
 
     std::cout << "main over" << std::endl;

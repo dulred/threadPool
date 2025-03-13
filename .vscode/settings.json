@@ -55,6 +55,10 @@
         "thread": "cpp",
         "typeinfo": "cpp",
         "cstring": "cpp",
-        "bitset": "cpp"
-    }
+        "bitset": "cpp",
+        "fstream": "cpp",
+        "iomanip": "cpp",
+        "sstream": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }

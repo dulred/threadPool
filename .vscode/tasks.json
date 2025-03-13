@@ -1,0 +1,39 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "cmake",
+            "type": "cppbuild",
+            "command": "cmake",
+            "args": [
+                "-G",
+                "Unix Makefiles",
+                "-S",
+                "${workspaceFolder}",
+                "-B",
+                "${workspaceFolder}/build"
+            ],
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "make",
+            "command": "make",
+            "type": "cppbuild",
+            "args": [],
+            "options": {
+                "cwd": "${workspaceFolder}/build"  // 在 build 文件夹中执行 make
+            },
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "Build",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "cmake",
+                "make"
+            ]
+        },
+    ]
+}

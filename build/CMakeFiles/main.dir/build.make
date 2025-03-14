@@ -84,35 +84,18 @@ CMakeFiles/main.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/main.cpp.s"
 	D:/dev/software/QT/Tools/mingw1120_64/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:/dev/source/c++/vscode/threadPool/main.cpp -o CMakeFiles/main.dir/main.cpp.s
 
-CMakeFiles/main.dir/threadPool/threadpool.cpp.obj: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/threadPool/threadpool.cpp.obj: CMakeFiles/main.dir/includes_CXX.rsp
-CMakeFiles/main.dir/threadPool/threadpool.cpp.obj: D:/dev/source/c++/vscode/threadPool/threadPool/threadpool.cpp
-CMakeFiles/main.dir/threadPool/threadpool.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/dev/source/c++/vscode/threadPool/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/threadPool/threadpool.cpp.obj"
-	D:/dev/software/QT/Tools/mingw1120_64/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/threadPool/threadpool.cpp.obj -MF CMakeFiles/main.dir/threadPool/threadpool.cpp.obj.d -o CMakeFiles/main.dir/threadPool/threadpool.cpp.obj -c D:/dev/source/c++/vscode/threadPool/threadPool/threadpool.cpp
-
-CMakeFiles/main.dir/threadPool/threadpool.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/threadPool/threadpool.cpp.i"
-	D:/dev/software/QT/Tools/mingw1120_64/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:/dev/source/c++/vscode/threadPool/threadPool/threadpool.cpp > CMakeFiles/main.dir/threadPool/threadpool.cpp.i
-
-CMakeFiles/main.dir/threadPool/threadpool.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/threadPool/threadpool.cpp.s"
-	D:/dev/software/QT/Tools/mingw1120_64/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:/dev/source/c++/vscode/threadPool/threadPool/threadpool.cpp -o CMakeFiles/main.dir/threadPool/threadpool.cpp.s
-
 # Object files for target main
 main_OBJECTS = \
-"CMakeFiles/main.dir/main.cpp.obj" \
-"CMakeFiles/main.dir/threadPool/threadpool.cpp.obj"
+"CMakeFiles/main.dir/main.cpp.obj"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
 
 main.exe: CMakeFiles/main.dir/main.cpp.obj
-main.exe: CMakeFiles/main.dir/threadPool/threadpool.cpp.obj
 main.exe: CMakeFiles/main.dir/build.make
 main.exe: CMakeFiles/main.dir/linkLibs.rsp
 main.exe: CMakeFiles/main.dir/objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:/dev/source/c++/vscode/threadPool/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable main.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:/dev/source/c++/vscode/threadPool/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable main.exe"
 	D:/dev/software/QT/Tools/CMake_64/bin/cmake.exe -E rm -f CMakeFiles/main.dir/objects.a
 	D:/dev/software/QT/Tools/mingw1120_64/bin/ar.exe qc CMakeFiles/main.dir/objects.a @CMakeFiles/main.dir/objects1.rsp
 	D:/dev/software/QT/Tools/mingw1120_64/bin/c++.exe -g -Wl,--whole-archive CMakeFiles/main.dir/objects.a -Wl,--no-whole-archive -o main.exe -Wl,--out-implib,libmain.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/main.dir/linkLibs.rsp

@@ -153,30 +153,6 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-threadPool/threadpool.obj: threadPool/threadpool.cpp.obj
-.PHONY : threadPool/threadpool.obj
-
-# target to build an object file
-threadPool/threadpool.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/threadPool/threadpool.cpp.obj
-.PHONY : threadPool/threadpool.cpp.obj
-
-threadPool/threadpool.i: threadPool/threadpool.cpp.i
-.PHONY : threadPool/threadpool.i
-
-# target to preprocess a source file
-threadPool/threadpool.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/threadPool/threadpool.cpp.i
-.PHONY : threadPool/threadpool.cpp.i
-
-threadPool/threadpool.s: threadPool/threadpool.cpp.s
-.PHONY : threadPool/threadpool.s
-
-# target to generate assembly for a file
-threadPool/threadpool.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/threadPool/threadpool.cpp.s
-.PHONY : threadPool/threadpool.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -189,9 +165,6 @@ help:
 	@echo "... main.obj"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... threadPool/threadpool.obj"
-	@echo "... threadPool/threadpool.i"
-	@echo "... threadPool/threadpool.s"
 .PHONY : help
 
 

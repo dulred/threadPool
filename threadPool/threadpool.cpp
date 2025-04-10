@@ -25,7 +25,7 @@ ThreadPool::~ThreadPool()
 {
     isPoolRunning_ = false;
 
-    // 等待线程池里面所有的线程返回 有两种状态: 阻塞& 正在执行任务中
+    // 等待线程池里面所有的线程返回 有三种状态: 阻塞 & 正在执行任务中 & 阻塞状态抢锁中
     std::unique_lock<std::mutex> lock(taskQueMtx_);
     notEmpty_.notify_all();
     exitCond_.wait(lock, [&](){return threads_.size() == 0;});
@@ -155,7 +155,7 @@ void ThreadPool::threadFunc(int threadid)
                 // 每一秒中返回一次  怎么区分: 超时返回？ 还是有任务待执行返回
                 while (taskQue_.size() == 0)
                 { 
-                    // 线程池要结束，回收线程资源
+                    // 线程池要结束，
                     if (!isPoolRunning_)
                     {
                         threads_.erase(threadid);
@@ -163,6 +163,8 @@ void ThreadPool::threadFunc(int threadid)
                         exitCond_.notify_all();
                         return;
                     }
+
+                    // 超时回收线程资源
                     if (poolMode_ == PoolMode::MODE_CACHED)
                     {
                         // 条件变量， 超时返回了
